@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+public class SurveySystem {
+
+    public static void main(String[] args) {
+
+        
+
+        Scanner scanner = new Scanner(System.in);
+
+        
+
+        System.out.println("Welcome to our survey system!");
+
+        System.out.println("Please enter your name:");
+
+        String name = scanner.nextLine();
+
+        System.out.println("Please enter your age:");
+
+        int age = scanner.nextInt();
+
+        scanner.nextLine();
+
+        
+
+        System.out.println("Thank you for the information, " + name + "!");
+
+        System.out.println("Now, let's start the survey.");
+
+        
+
+        System.out.println("Question 1: What is your favorite color?");
+
+        String favoriteColor = scanner.nextLine();
+
+        
+
+        System.out.println("Question 2: How often do you exercise per week?");
+
+        int exerciseFrequency = scanner.nextInt();
+
+        scanner.nextLine();
+
+        
+
+        System.out.println("Question 3: On a scale of 1 to 10, how satisfied are you with your current job?");
+
+        int jobSatisfaction = scanner.nextInt();
+
+        scanner.nextLine();
+
+        
+
+        System.out.println("Thank you for completing the survey!");
+
+        System.out.println("Here are your responses:");
+
+        System.out.println("Name: " + name);
+
+        System.out.println("Age: " + age);
+
+        System.out.println("Favorite color: " + favoriteColor);
+
+        System.out.println("Exercise frequency: " + exerciseFrequency + " times per week");
+
+        System.out.println("Job satisfaction: " + jobSatisfaction + "/10");
+
+    }
+
+}
